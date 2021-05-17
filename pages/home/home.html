@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>COMPLEMENTOS</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-label  *ngFor="let comp of complementos">
+    <ion-icon 
+      name="remove-circle" 
+      (click)="decrement()">
+    </ion-icon>
+     {{currentNumber}}
+    <ion-icon 
+    name="add-circle" 
+    (click)="increment()">
+    </ion-icon>
+    &emsp;
+    {{comp.complemento}}
+  </ion-label>
+</ion-content>
